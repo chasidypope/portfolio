@@ -1,4 +1,4 @@
-# Chasidy Pope — Personal IT Portfolio 🌸
+# Chasidy Pope — Personal IT Portfolio 
 
 A responsive portfolio built with plain HTML, CSS, and JavaScript, featuring the **actual photos and illustrations uploaded for this website** (not AI-generated replacements).
 
