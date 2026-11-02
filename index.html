@@ -1,150 +1,203 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#fbebf5">
-  <meta name="description" content="Chasidy Pope's portfolio — Information Technology student at UCF. Explore Study Buddy, hands-on PC builds, custom keyboards, and technical skills.">
-  <title>Chasidy Pope ♡ IT Portfolio</title>
-  <link rel="icon" type="image/jpeg" href="assets/IMG_2815.jpeg">
-  <link rel="stylesheet" href="style.css?v=3">
-  <script src="script.js?v=3" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fbf9f6">
+  <meta name="description" content="Chasidy Pope — Information Technology student at UCF. Explore my web development and hardware projects, including Study Buddy and custom PC and keyboard builds.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Chasidy Pope | IT Portfolio">
+  <meta property="og:description" content="Web projects, computer hardware builds, and the things I'm learning along the way.">
+  <title>Chasidy Pope | IT Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700;750;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="header" id="siteHeader">
-    <nav class="navbar" aria-label="Main navigation">
-      <a class="brand" href="#home" aria-label="Chasidy Pope, home">
-        <img src="assets/IMG_2815.jpeg" alt="" width="44" height="44">
-        <span>Chasidy Pope <span class="brand-flower" aria-hidden="true">✿</span></span>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header" id="top">
+    <div class="container header-layout">
+      <a href="#top" class="identity" aria-label="Chasidy Pope — back to top">
+        <strong>Chasidy Pope</strong>
+        <span>Information Technology · Portfolio</span>
       </a>
-      <button class="menu-toggle icon-button" type="button" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      <button class="mobile-nav-toggle" type="button" id="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Open navigation menu">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
       </button>
-      <div class="nav-links" id="navLinks">
-        <a href="#home" class="nav-link active">⌂ <span>Home</span></a>
-        <a href="#about" class="nav-link">♡ <span>About</span></a>
-        <a href="#skills" class="nav-link">✧ <span>Skills</span></a>
-        <a href="#projects" class="nav-link">▧ <span>Projects</span></a>
-        <a href="#hardware" class="nav-link">⌘ <span>My Builds</span></a>
-        <a href="#contact" class="nav-link">✉ <span>Contact</span></a>
-      </div>
-      <button class="theme-toggle icon-button" id="themeToggle" type="button" aria-label="Enable dark mode" title="Switch color theme">
-        <span class="theme-icon" aria-hidden="true">☾</span>
-      </button>
-    </nav>
+      <nav class="nav-links" id="main-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#hardware">Hardware</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <section id="home" class="hero" aria-label="Introduction with cherry blossom background">
-    <div class="hero-inner wrap">
-      <div class="hero-card reveal">
-        <span class="eyebrow">✿ Information Technology Student · UCF</span>
-        <h1>Hi, I'm <span>Chasidy!</span></h1>
-        <p>I love exploring technology, solving problems, and creating projects that make everyday life a little easier. Welcome to my little corner of the internet!</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#projects">✿ Explore My Projects</a>
+  <main id="main">
+    <section class="hero" aria-labelledby="intro-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">IT Student · University of Central Florida</p>
+          <h1 id="intro-title">Hi, I'm<br><span>Chasidy.</span></h1>
+          <p class="hero-description">I build useful digital projects, explore computer hardware, and enjoy solving problems through technology. Welcome to a selection of my work.</p>
+          <div class="hero-actions">
+            <a class="button button-solid" href="#projects">Explore my work <span aria-hidden="true">↗</span></a>
+            <a class="button button-outline" href="#about">About me</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-frame">
+            <img src="assets/pc-hero.jpg" alt="Chasidy's desk and custom PC, with dual monitors and purple lighting" fetchpriority="high">
+          </div>
+          <div class="photo-note" aria-label="Personal philosophy">
+            <span>Hands-on & self-directed</span>
+            <strong>Learn. Build. Improve.</strong>
+          </div>
         </div>
       </div>
-      <img class="hero-peek" src="assets/cat-peek-crop.jpg" alt="Small pink-outlined cat illustration" loading="lazy">
-    </div>
-  </section>
-
-  <main id="main" class="main wrap">
-    <section class="facts" aria-label="Quick introduction">
-      <div class="fact reveal"><span class="fact-icon pink" aria-hidden="true">🎓</span><div><strong>Education</strong><small>Information Technology · UCF</small></div></div>
-      <div class="fact reveal"><span class="fact-icon violet" aria-hidden="true">⌨</span><div><strong>Interests</strong><small>Technology · Gaming · Creating</small></div></div>
-      <div class="fact reveal"><span class="fact-icon peach" aria-hidden="true">✧</span><div><strong>Currently Building</strong><small>Projects & hands-on skills</small></div></div>
-      <div class="fact reveal"><span class="fact-icon mint" aria-hidden="true">♡</span><div><strong>Open To</strong><small>IT internships & opportunities</small></div></div>
     </section>
 
-    <div class="intro-grid">
-      <section class="card about-card reveal" id="about" aria-labelledby="aboutTitle">
-        <div class="section-head"><h2 id="aboutTitle">♡ About Me</h2><span class="petal" aria-hidden="true">✿</span></div>
-        <div class="about-copy">
-          <p>Hi! I'm Chasidy, an Information Technology student at the University of Central Florida. I enjoy learning how systems work, exploring programming, and turning creative ideas into useful projects.</p>
-          <p>I've built my own PC and enjoy working on hands-on projects like Study Buddy. Outside of technology, I love <strong>gaming, creating videos, taking walks,</strong> and spending time with <strong>my ginger cat!</strong></p>
+    <div class="overview-bar" aria-label="Portfolio highlights">
+      <div class="container overview-grid">
+        <div class="overview-item">
+          <span class="overview-number">01</span>
+          <div><strong>University of Central Florida</strong><span>Information Technology student</span></div>
         </div>
-        <div class="hobby-tags" aria-label="Hobbies"><span>🎮 Gaming</span><span>🎥 Creating videos</span><span>🚶 Taking walks</span><span>🐈 Ginger cat</span></div>
-        <img class="ginger-cat" src="assets/IMG_2813.jpeg" alt="Your orange cat illustration" loading="lazy">
-      </section>
-
-      <section class="card skills-card reveal" id="skills" aria-labelledby="skillsTitle">
-        <div class="section-head"><h2 id="skillsTitle">✧ Technical Skills</h2><span class="petal" aria-hidden="true">♡</span></div>
-        <h3>Programming & web</h3>
-        <div class="skill-tags"><span>Python</span><span>Java</span><span>C</span><span>C++</span><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-        <h3>Tools & platforms</h3>
-        <div class="skill-tags"><span>GitHub</span><span>VS Code</span><span>Supabase</span><span>Microsoft Excel</span><span>Word</span><span>PowerPoint</span></div>
-        <h3>Interests & strengths</h3>
-        <div class="skill-tags"><span>PC building</span><span>Hardware</span><span>Problem-solving</span><span>Communication</span><span>Customer service</span></div>
-      </section>
-
-      <aside class="card illustration-card reveal" aria-label="Illustration corner">
-        <img src="assets/IMG_2814.jpeg" alt="Your black-and-white doodle cat with stars" loading="lazy">
-        <div class="illustration-accent" aria-hidden="true">✿ ♡ ✧</div>
-        <p>Curious about technology and always excited to learn something new.</p>
-      </aside>
+        <div class="overview-item">
+          <span class="overview-number">02</span>
+          <div><strong>Web development</strong><span>HTML · CSS · JavaScript · Supabase</span></div>
+        </div>
+        <div class="overview-item">
+          <span class="overview-number">03</span>
+          <div><strong>Hands-on hardware</strong><span>Custom PC & mechanical keyboards</span></div>
+        </div>
+      </div>
     </div>
 
-    <section id="projects" class="section reveal" aria-labelledby="projectHeading">
-      <div class="section-heading"><h2 id="projectHeading"><span aria-hidden="true">✿</span> Featured Project</h2><p>Something I've been building and learning from.</p></div>
-      <div class="card feature-card">
-        <button class="image-button project-shot" type="button" data-gallery="study" data-index="0" aria-label="Enlarge Study Buddy screenshot">
-          <img src="assets/study-buddy-preview.png" alt="Actual Study Buddy student planner website screenshot" loading="lazy">
-          <span class="view-image">↗ View image</span>
-        </button>
-        <div class="feature-copy">
-          <span class="micro-label">Web application · Student productivity</span>
-          <h3>Study Buddy <span aria-hidden="true">♡</span></h3>
-          <p>A cute study planner that helps students organize assignments and due dates, stay focused with a study timer, and keep track of their progress. Visitors can try it as guests or use personal accounts.</p>
-          <div class="feature-points"><span>✓ Assignment tracking and calendar</span><span>✓ Study/focus timer</span><span>✓ Guest mode and personal accounts</span><span>✓ Online account data with Supabase</span></div>
-          <div class="skill-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Supabase</span></div>
-          <div class="action-row">
-            <a class="button button-primary" href="https://chasidypope.github.io/study-buddy/" target="_blank" rel="noopener noreferrer">View Live Site ↗</a>
-            <a class="button button-outline" href="https://github.com/chasidypope/study-buddy" target="_blank" rel="noopener noreferrer">View Code ↗</a>
+    <section class="section section-about" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="about-left">
+          <div class="section-heading">
+            <p class="eyebrow">01 / About me</p>
+            <h2 id="about-title">Curious about how<br>things work.</h2>
+          </div>
+          <div class="body-copy">
+            <p>I'm an Information Technology student at the University of Central Florida with an interest in programming, computer hardware, and creating helpful digital experiences.</p>
+            <p>I enjoy learning through personal projects—from developing a student planner to building my own PC and mechanical keyboards.</p>
+          </div>
+          <div class="personal-note">
+            <img src="assets/ginger-cat.jpg" alt="An illustrated orange ginger cat" loading="lazy">
+            <div>
+              <strong>Beyond technology</strong>
+              <p>I enjoy gaming, creating videos, taking walks, and spending time with my ginger cat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="skills-panel" id="skills" aria-labelledby="skills-title">
+          <h3 id="skills-title">Technical skills</h3>
+          <div class="skill-category">
+            <h4>Programming & web</h4>
+            <div class="skill-tags"><span>Python</span><span>Java</span><span>C / C++</span><span>HTML / CSS</span><span>JavaScript</span></div>
+          </div>
+          <div class="skill-category">
+            <h4>Tools & platforms</h4>
+            <div class="skill-tags"><span>Git & GitHub</span><span>Supabase</span><span>VS Code</span><span>Microsoft Office</span></div>
+          </div>
+          <div class="skill-category">
+            <h4>Interests & strengths</h4>
+            <div class="skill-tags"><span>Troubleshooting</span><span>Computer hardware</span><span>Problem-solving</span><span>User support</span></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="hardware" class="section reveal" aria-labelledby="hardwareHeading">
-      <div class="section-heading"><h2 id="hardwareHeading"><span aria-hidden="true">♡</span> My Hardware Builds</h2><p>A closer look at the things I've built and customized.</p></div>
-      <div class="hardware-grid">
-        <article class="card hardware-card">
-          <div class="section-head"><h3>🖥 My Custom PC Build</h3><span class="petal">♡</span></div>
-          <div class="pc-gallery photo-grid">
-            <button class="image-button photo-main" type="button" data-gallery="pc" data-index="0" aria-label="Enlarge first PC setup photo"><img src="assets/IMG_4605.jpeg" alt="Your actual dual-monitor custom PC setup with purple lighting" loading="lazy"></button>
-            <button class="image-button photo-side" type="button" data-gallery="pc" data-index="1" aria-label="Enlarge second PC setup photo"><img src="assets/IMG_4553.jpeg" alt="Your actual PC setup, white computer case and keyboard" loading="lazy"></button>
+    <section class="section section-projects" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">02 / Selected work</p>
+          <h2 id="projects-title">Projects with a purpose.</h2>
+          <p>A closer look at what I build and the technologies behind it.</p>
+        </div>
+        <article class="feature-card">
+          <div class="feature-image">
+            <img src="assets/study-buddy-preview.png" alt="Study Buddy student planner dashboard showing an assignment tracker and task form" loading="lazy">
           </div>
-          <p>My custom PC is a hands-on project for gaming, school, and content creation. I've gained experience through choosing parts, assembly, setup, upgrades, and troubleshooting.</p>
-          <details class="more-details"><summary>See what I worked on <span aria-hidden="true">⌄</span></summary><p>Component selection and compatibility, system assembly, everyday setup, and learning through hardware adjustments and troubleshooting.</p></details>
-        </article>
-        <article class="card hardware-card">
-          <div class="section-head"><h3>⌨ My Custom Keyboard</h3><span class="petal">✿</span></div>
-          <div class="keyboard-gallery photo-grid">
-            <button class="image-button photo-main" type="button" data-gallery="keyboard" data-index="0" aria-label="Enlarge your keyboard close-up"><img src="assets/real-keyboard-crop.jpg" alt="A close-up of one of my custom-built keyboards" loading="lazy"></button>
-            <button class="image-button photo-side" type="button" data-gallery="keyboard" data-index="1" aria-label="Enlarge full desk with keyboard"><img src="assets/IMG_4553.jpeg" alt="Your actual desk photograph showing one of your custom keyboards" loading="lazy"></button>
+          <div class="feature-info">
+            <p class="eyebrow">Featured web application</p>
+            <h3>Study Buddy</h3>
+            <p>A student planner designed to make organizing assignments easier, featuring an interactive dashboard and personalized study tools.</p>
+            <ul class="features">
+              <li>Assignment and deadline tracking</li>
+              <li>Account sign-in and guest mode</li>
+              <li>Cloud-backed storage through Supabase for signed-in users</li>
+            </ul>
+            <p class="project-tech">HTML <span>·</span> CSS <span>·</span> JavaScript <span>·</span> Supabase</p>
+            <a class="inline-link" href="https://chasidypope.github.io/study-buddy/" target="_blank" rel="noopener noreferrer">View live project <span aria-hidden="true">↗</span></a>
           </div>
-          <p>One of my custom-built keyboards. I've built multiple keyboards starting from barebones kits, and it's something I really enjoy doing!</p>
-
         </article>
       </div>
     </section>
 
-    <section id="contact" class="contact-section card reveal" aria-labelledby="contactHeading">
-      <div class="contact-heading"><img src="assets/cat-laptop-crop.jpg" alt="Your white cat with pink laptop illustration" loading="lazy"><div><h2 id="contactHeading">Let's connect! ♡</h2><p>I'm interested in IT internship opportunities and enjoy meeting people who love technology and creative projects.</p></div></div>
-      <div class="contact-links">
-        <a href="https://www.linkedin.com/in/chasidypope/" target="_blank" rel="noopener noreferrer"><span class="contact-icon">in</span><strong>LinkedIn</strong><small>View profile ↗</small></a>
-        <a href="https://github.com/chasidypope" target="_blank" rel="noopener noreferrer"><span class="contact-icon">⌘</span><strong>GitHub</strong><small>See my code ↗</small></a>
-        <a href="assets/CHASIDY POPE RESUME.pdf" download="CHASIDY POPE RESUME.pdf"><span class="contact-icon">▤</span><strong>Résumé</strong><small>Download PDF ↓</small></a>
+    <section class="section section-hardware" id="hardware" aria-labelledby="hardware-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">03 / Hands-on work</p>
+          <h2 id="hardware-title">Built, not just studied.</h2>
+          <p>Personal hardware projects that help me understand technology from the inside out.</p>
+        </div>
+        <div class="hardware-grid">
+          <article class="hardware-card">
+            <button class="image-open" type="button" data-image="assets/custom-pc.jpg" data-alt="Chasidy's custom-built PC and desk setup" aria-label="View larger photo of the custom PC">
+              <img src="assets/custom-pc.jpg" alt="Custom-built white PC beside two monitors and a mechanical keyboard" loading="lazy">
+              <span>View photo <span aria-hidden="true">↗</span></span>
+            </button>
+            <div class="hardware-copy">
+              <p class="eyebrow">Hardware / Assembly</p>
+              <h3>Custom PC Build</h3>
+              <p>My personally assembled desktop setup. A hands-on project involving component selection, hardware assembly, and troubleshooting.</p>
+            </div>
+          </article>
+          <article class="hardware-card">
+            <button class="image-open" type="button" data-image="assets/custom-keyboard.jpg" data-alt="A close-up of one of Chasidy's custom mechanical keyboards" aria-label="View larger photo of a custom keyboard">
+              <img src="assets/custom-keyboard.jpg" alt="One of Chasidy's custom mechanical keyboards, photographed on a floral desk mat" loading="lazy">
+              <span>View photo <span aria-hidden="true">↗</span></span>
+            </button>
+            <div class="hardware-copy">
+              <p class="eyebrow">Hardware / Customization</p>
+              <h3>Mechanical Keyboard Builds</h3>
+              <p>One of my custom-built keyboards. I've built multiple keyboards starting from barebones kits, and it's something I genuinely enjoy doing.</p>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
   </main>
-  <footer class="footer wrap"><span>Made with curiosity and a little pink ♡</span><span>© <span id="copyrightYear">2026</span> Chasidy Pope</span></footer>
-  <dialog class="lightbox" id="galleryDialog" aria-label="Photo gallery">
-    <button class="lightbox-close icon-button" id="galleryClose" type="button" aria-label="Close image">×</button>
-    <button class="lightbox-arrow prev" id="galleryPrev" type="button" aria-label="Previous image">‹</button>
-    <figure><img id="galleryImage" src="" alt=""><figcaption id="galleryCaption"></figcaption></figure>
-    <button class="lightbox-arrow next" id="galleryNext" type="button" aria-label="Next image">›</button>
+
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-copy">
+          <p class="eyebrow">04 / Contact</p>
+          <h2>Let's connect.</h2>
+          <p>I'm interested in IT internship opportunities and continuing to learn by building meaningful projects.</p>
+        </div>
+        <div class="footer-links" aria-label="Connect with Chasidy">
+          <a href="https://www.linkedin.com/in/chasidypope/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/chasidypope" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          <a href="assets/Chasidy-Pope-Resume.pdf" target="_blank" rel="noopener noreferrer">Résumé <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="footer-bottom"><small>© <span id="current-year">2026</span> Chasidy Pope</small><a href="#top">Back to top ↑</a></div>
+    </div>
+  </footer>
+
+  <dialog id="image-dialog" class="lightbox" aria-label="Expanded hardware photograph">
+    <button type="button" class="lightbox-close" id="close-lightbox" aria-label="Close expanded photograph">×</button>
+    <img alt="" id="lightbox-image">
+    <p id="lightbox-caption"></p>
   </dialog>
 </body>
 </html>
