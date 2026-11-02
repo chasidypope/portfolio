@@ -1,3 +1,3 @@
 # Chasidy Pope | IT Portfolio
 
-Professional ivory-and-dusty-pink portfolio, built using HTML, CSS, and vanilla JavaScript. Based on the approved full-site sketch and uses Chasidy's original uploaded photos and illustrations.
+Professional portfolio, built using HTML, CSS, and vanilla JavaScript. Based on the approved full-site sketch and uses Chasidy's original uploaded photos and illustrations.
